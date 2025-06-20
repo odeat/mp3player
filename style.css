@@ -32,6 +32,7 @@ body {
 .img-container{
     position: relative;
     width: 110px;   
+    margin-right: px
 }
 
 .img-container::after{
@@ -54,4 +55,86 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    animation: rotate 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img{
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn{
+    background-color: white;
+    border: 0;
+    color: #f5c4d3;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.action-btn-big{
+    color: #eba4ba;
+    font-size: 30px;
+}
+
+.action-btn:focus{
+    outline: 0;
+}
+
+.music-info {
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.music-info h4{
+    margin: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress{
+    background-color: #EF85AD;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+    transition: width 0.1s linear;
 }
