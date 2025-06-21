@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 * {
@@ -113,8 +113,20 @@ body {
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 
+h1 {
+    color: #F8E1DD;
+}
+
+#artist {
+    margin: 0;
+    font-size: 14px;
+    color: #A86C8C;
+    font-family: "Sour Gummy", cursive;
+}
+
 .music-info h4{
     margin: 0;
+    color: #F184AD;
 }
 
 .music-container.play .music-info {
