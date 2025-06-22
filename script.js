@@ -13,7 +13,6 @@ const songs = [
     'Likey (라이키) - TWICE (트와이스)', 
     'Serendipity - Park Jimin',
     '고엽. Autumn Leaves - BTS (방탄소년단)',
-    'Daydream (백일몽) - J-hope',
     'Best Of Me - BTS (방탄소년단)',
     'BBoom BBoom (뿜뿜) - MOMOLAND (모모랜드)',
     'Dionysus - BTS (방탄소년단)',
@@ -21,7 +20,7 @@ const songs = [
 ]
 
 // keep track of songs
-let songIndex = 4
+let songIndex = 3
 
 // initially load song
 loadSong(songs[songIndex])
